@@ -1,0 +1,2 @@
+1. there is a website called "cppreference.com" for all kind of information of c++
+
