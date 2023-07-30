@@ -1,0 +1,30 @@
+    1. why opps
+
+
+
+    2. procedure oriented programming (pop)
+        * consists of writing a set of instructions for the computer to follow
+        * main focus is on funtion and not on flow of data 
+        * functions can either use local or global data
+        * Data moves openly from funcion to function 
+
+    3. object oriented proramiing (oop)
+        * Works on the concept of classes and objects 
+        * A class is a template to create objects
+        * Treats data as a critical element 
+        * Decomposes the problem in objects and builds data and functions around the objects 
+
+    4. Basic concepts in object oriented programming
+        * Classes - Basic template for creating objects. 
+        * Objects - Basic run time entities
+        * Data abstruction and encapsulation - Wrapping data and functions into single unit.
+        * Inheritence - Properties of one class can be inherited into others
+        * Polymorphism - ability to take more than one forms
+        * Dynamic binding - code which will execute is not known until the program runs.
+        * message passing - object.message(information) call _get_output_format
+    
+    5. BENIFITS OF OBJECT ORIENTED PROGRAMMING
+        * better code reusability using objects and inheritance.
+        * principle of data hiding helps build secure systems.
+        * multiple objects can co-exists without any interference
+        * software complexity can be easily managed. 
