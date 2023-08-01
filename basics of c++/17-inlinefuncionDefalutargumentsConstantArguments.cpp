@@ -43,7 +43,7 @@ int main()
     int money;
     cout<<"how much money do you have: ";
     cin>>money;
-    cout<<"You have interest : "<<moneyReceive(money)<<endl; //as you have set a default "interest" you can skip
+    cout<<"You have interest : "<<moneyReceive(money)<<endl; //as you have set a default "interest" you can skip the interest
     cout<<"You have interest : "<<moneyReceive(money, 0.2)<<endl; //though you have set a default argument you can send another value
 
     return 0;
