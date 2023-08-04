@@ -1,3 +1,5 @@
+//scope resultation :: this video was 64 number of anisul islam's c++ playlist;
+
 #include<iostream>
 using namespace std;
 
