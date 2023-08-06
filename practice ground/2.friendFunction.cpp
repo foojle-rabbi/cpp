@@ -23,8 +23,16 @@ class circle2{
     int r;
 public:
     int area2(int r){
-        return (pi * r * r); //Remember to solve this problem
+        circle object;
+        return (object.pi * r * r); //Remember to solve this problem.
     }
+    
+    /* 
+        the problem is, to use friend class object you need declare a object of that class. and then access the member using
+        that object. jemon ta ekhane hoiche. prothom prothom ami pi re object chara use korte gechi. tai etodin etto error 
+        dekahiche. kintu jokhon ami circle er ekata object create korchi. tarpor oi "pi" re use korchi tokhon kono somossa 
+        hoy nai.
+    */
 };
 
 int main()
