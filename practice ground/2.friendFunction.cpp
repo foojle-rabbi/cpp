@@ -24,7 +24,8 @@ class circle2{
 public:
     int area2(int r){
         circle object;
-        return (object.pi * r * r); //Remember to solve this problem.
+        return (object.pi * r * r); //Remember to solve this problem. kire vai ami toh ei problem ta solve korchi ar niche
+        // tar explanation o dihi; its means the problem had been solved;
     }
     
     /* 
