@@ -53,7 +53,8 @@ int main()
     kaj korte hoibo. jodi flaot nia kaj korte jai tahole amre arekta class float er name banaite hoibo.. toh oi jhamela
     durr korar jonnoi ache template;
 
-    tempalte use korle ar alada alada class make kora lage na.
+    tempalte use korle ar alada alada class make kora lage na. ekta class er moddhei alada alada variable type nia kaaj kora
+    jay;
     */
     //Must learn how to calculate dotproduct
 
