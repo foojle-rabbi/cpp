@@ -1,0 +1,6 @@
+ami toh already array er loge introduced tai ar notun koira intro er dorkar nai; tobe oi khan thaika notun kichu inbuilt
+function jemon min and maximum number find korar function shomporke janlam ei arki;
+
+tachara aro kichu topics nia kotha koiche like:
+1. linear search;
+2. reverse an array; ei koytai; 

@@ -36,4 +36,7 @@ check kore je n & n -1 == 0; kina;
 
 jei shokol number two er power jay shei shokol number re tar cheye 1 number kom shonkha dia & korle 0 ase; ar ei logic tai 
 eikhane apply korche;
+
+accha ei problem er arek ta notun solution pailam ta hoilo gia je; jei jei shonkha power of two shei shei number e set bits
+mane 1 bit matro ekta; 
 */
