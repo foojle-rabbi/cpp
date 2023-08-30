@@ -38,23 +38,26 @@ int lastOccourance(int arr[], int n, int key){
     return ans;
 }
 
+int totalOccourance(int arr[], int n, int key){
+    int first = firstOccourance(arr, n, key);
+    int last = lastOccourance(arr, n, key);
+    
+    return (last - first) + 1;
+}
+
 int main()
 {
     /*
-    Problem: first and last position of an element in a sorted array;
-    explanation: tomar kache ekta sorted array deoya thakbe ebong tomake ekta number diye oi number er first index and last
-    index koto? 
-    suppose [1, 2, 3, 3, 3, 5]; ekhon tomake bola bolo holo 3; tar mane 3 er first occourance 2 and 4; that is the answare;
+    Problem: Find the total number of occaourance of a number;
 
-    eitao easy e; jehetu binary search shomporke jani tai khub easyly e eita ber kora jabe; tobe aage eitake 2 part e vag
-    kora jak; mane aage ber korbo first occourance and then last occourence;
+    jakk pera nai etao oi ager tar motoi easy; just first occourance and then last occourance ber kore formula apply korlei
+    kon number koto bar ache ta ber kora jaibo; its easy peasy;
     */
 
     int arr[6] = {1, 2, 3, 3, 3, 5};
     int size = 5;
 
-    cout<<"first occourence : "<<firstOccourance(arr, size, 3)<<endl;
-    cout<<"last occourence : "<<lastOccourance(arr, size, 3)<<endl;
+    cout<<"Total number of occourance of value 3 is : "<<totalOccourance(arr, size, 5)<<endl;
 
     return 0;
 }
