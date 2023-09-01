@@ -13,5 +13,26 @@ int main()
     arr[mid] < arr[mid + 1] tar mane target aro upore ache ar jodi eita na hoy taile hoyto amar mid e hoiteche uttor ar notyo
     end = mid;
     */
+
+
+    class Solution {
+        public:
+        int peakIndexInMountainArray(vector<int>& arr) {
+            int left = 0;
+            int right = arr.size() -1;
+            int ans = -1;
+            while(left < right){
+                int mid = left + (right - left) / 2;
+                if(arr[mid] < arr[mid+1]){
+                    left = mid + 1;
+                    ans = left;
+                }else{
+                    right = mid;
+                }
+            }
+            return ans;
+        }
+    };
+
     return 0;
 }
