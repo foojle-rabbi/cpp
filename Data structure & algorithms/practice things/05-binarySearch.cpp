@@ -31,7 +31,7 @@ int main()
 {
     int arr[10] = {2,7,8,10,11,16,20,34,67,88};
 
-    //sort(arr[0], arr[10]) accha eita kaaj kore naa?
+    sort(arr[0], arr[10]); 
 
     display(arr, 10);
     cout<<binarySearch(arr, 10, 2)<<endl;
