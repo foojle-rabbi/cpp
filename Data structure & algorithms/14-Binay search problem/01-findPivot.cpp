@@ -30,7 +30,7 @@ int main()
     spoiler alert: eshob question bujhar jonno graph nia dry run korle aro easy hoiya jay; so try to do dry run with graph;
     */
 
-    int arr[] = {7, 7, 7, 7};
+    int arr[] = {3,4,5,1,2};
     int size = sizeof(arr) / sizeof(int);
     cout<<"Pivot index is: "<<findPivot(arr, size)<<endl;
     return 0;
