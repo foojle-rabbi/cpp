@@ -1,0 +1,36 @@
+Accha ei lecture e ar temon kichu bole nai; mane just khali selection sort nia e explain korche; ar time complexity, wrost
+case best case, use case ei shomorke ei ar ki;
+
+ar selection sort er kahini hoiteche protibar ekta ekta koira index choose korbo ar er por theke check korbo je eitar theke
+ar kono minimum value ache kina jodi thake taile swap kore dibe; ei rokom koira (n-1) porjonto cholbo;
+
+jemon amar kache arr[] = {2, 5, 1, 0, 3}; ei array ta ache ekhon niche protita pass ba round dekhaiya ditachi; 
+
+    Round 1st: 2 ke minimum value dhore nichi tarpor 2 er por theke mane 5 theke khujte thakmu je 2 theke choto ache kina toh jokhon
+    0 e gelam tokhon dekhlam 2 theke 0 choto tai 2 ar 0 swap kore dibo: 0 5 1 2 3
+
+    2nd round: tarpor minimum index = 5; 5 er por theke abar check korbe je ar kono choto value ache kina jodi thake taile swap; ekhon
+    5 theke 1 choto tai 5 ar 1 swap hobe: 0 1 5 2 3
+
+    3rd round: abar 5 rei minimum index dhorbe ar 2 theke check korbe je choto kina; toh first ei dekhlo je 2 choto tai 5 ar 2
+    swap hobe: 0 1 2 5 3
+
+    4th round: ei bare aisha 5 ar 3 swap hobe karon 5 theke 3 choto: 0 1 2 3 5; 
+
+    ar boro kotha hocche nicher code ta chalaile aro practically bujhte parba: 
+
+        void selectionSort(int arr[], int n){  
+        int minIndex;
+        for(int i = 0; i < n; i++){
+            display(arr, n);
+            minIndex = i;
+            for(int j = i; j < n; j++){
+                if(arr[minIndex] > arr[j]){
+                    minIndex = j;
+                }
+            }
+            if(minIndex != i){
+                swap(arr[minIndex], arr[i]);
+            }
+        }
+    }

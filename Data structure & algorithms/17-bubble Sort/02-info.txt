@@ -1,0 +1,3 @@
+Ei tare bubble sort bola hoiche karon ei bubble er moto boro vlaue tare shobar piche nia jay; mane ekkebare first theke
+shuru korbo ar jodi kono boro value pay taile swap koira koira oi maximum value tare shobar last e nia dibo. ar eivabei bubble
+sort kaaj kore;
