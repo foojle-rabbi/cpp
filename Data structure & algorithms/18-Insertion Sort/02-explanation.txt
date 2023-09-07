@@ -1,0 +1,26 @@
+--> insertion sort hocche soting algorithm er moddhe khubi guruttopurno ekta algorithm; so eta jene rakha abosshok; jak oita
+kotha na; kotha hocche eita je, insertion sort kaaj kore kivabe? khubi simple; cause jehetu eitar name e insertion sort so 
+bujha jacche je insert nia e eita kichu korbo; 
+
+eitar logic ta simple logic; kemon: jemon: tomar kache ekta array ache toh oi array first index tare sorted dhora hoibo; tar
+por er porer index mane 1 number index er value tae oi sorted array te insert korbe; tobe insert korbe tar jaygay; mane dhoro
+tomar kache int arr[] = {2, 5, 1, 0, 3}; ei array ta ache ekhon tumi 2 porjonto sorted dhore rakho; tarpor 5 re inset korte
+jaao ekhon dekho 5 ki tar nijer jaygay ache kina? 5 ki 2 theke choto? nah toh jehetu choto na tai ar kichu hobe na; tarpor 1 
+ke inset korte jabe dekhbe 1 5 theke choto tai 5 ek ghor right e shift hobe 2 5 5 1 0 3; emon hobe; tar por abar 1 ke 2 er 
+sathe compare korbe jehetu 2 1 theke boro tai 2 o righ e shift hobe; 2 2 5 1 0 3; jetu index er value 0 te choila geche ar
+ar kono chot value nai tai while loop theme jabe; ekhon kotha hocche jehetu vlaue gula right shift hoiche tai 1 ke tar main jaygay
+shift korte hobe; arr[j + 1] = temp;
+
+
+void insertionSort(int *arr, int n){
+    for(int i = 1; i < n; i++){
+        int temp = arr[i];
+        int j = i - 1;
+
+        while(j >= 0 && temp < arr[j]){
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = temp;
+    }
+}
