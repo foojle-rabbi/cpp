@@ -1,2 +1,2 @@
 eikhane ar temon kichu likhlam na; cause eikaen jei 3-4 ta problem koraiche oi shob gula ami letcode problems er folder e code
-korchi;
+korchi; Lecture 10 or folder 10 e peye jaba;
