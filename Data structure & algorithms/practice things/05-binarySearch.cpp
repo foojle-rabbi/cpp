@@ -29,11 +29,15 @@ void display(int arr[], int n){
 
 int main()
 {
-    int arr[10] = {2,7,8,10,11,16,20,34,67,88};
+    int arr[] = {22,7,83,101,11,136,20,34, -64, 372, -02, 82,67,88};
 
-    sort(arr[0], arr[10]); 
+    int size = sizeof(arr) / sizeof(int);
 
-    display(arr, 10);
-    cout<<binarySearch(arr, 10, 2)<<endl;
+    // sort(arr[0], arr[size]) //wrong way below is the correct way of sorting an array;
+
+    display(arr, size);
+    sort(arr, arr + size); // now i understand how to sort an array using stl algorithms/functions;
+    display(arr, size);
+    // cout<<binarySearch(arr, 10, 2)<<endl;
     return 0;
 }

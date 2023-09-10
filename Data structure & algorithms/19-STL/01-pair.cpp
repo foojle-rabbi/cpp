@@ -17,6 +17,12 @@ int main()
     cout<<p2.second.second<<endl;
 
     pair<int, int> arr[] = {{1, 3}, {5, 2}, {2, 9}};
-    cout<<arr[0].second<<endl;
+    cout<<arr[0].second<<endl; 
+    cout<<arr[1].first<<endl;
+
+    pair<int, pair<int, int>> pr[] = {{2, {1, 3}}, {1, {2, 5}}};
+    cout<<pr[1].second.first<<endl;
+
+    //tar mane ami chaile nested pair er array o create korte pari;
     return 0;
 }
