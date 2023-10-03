@@ -1,0 +1,5 @@
+eikahne aro koyekta problem ache ebong shei gula hoilO:
+1. sprital print
+2. rotate image
+3. search an element in a 2d matrix rowise sorted
+4. search in a 2d matric ||
