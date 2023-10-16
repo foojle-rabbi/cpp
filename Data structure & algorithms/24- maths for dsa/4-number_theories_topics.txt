@@ -1,0 +1,15 @@
+1. primality test
+2. seive of Eratosthenes
+3. Prime factorization
+4. Number of divisors
+5. Binary Exponentiation
+6. Matrix Exponentiation
+7. Euclid Algorithm of GCD  
+8. Segmented seive
+9. Modular Arithmetic
+10. Fibonacci finding with matrix Exponentiation
+11. Modular inverse
+12. Binomial Coefficient
+13. Euler's Totient Function
+
+এই গুলা হলো নাম্বার থিওরির কিছু টপিট। কালেক্টেড ফ্রম ফেইজ বুক। যাই হোক যে করে হোক এই টপিক গুলা শেষ করতে হবে। 
