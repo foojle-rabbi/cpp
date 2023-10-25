@@ -5,6 +5,7 @@ int firstOccourance(int arr[], int n, int key){
     int left = 0;
     int right = n -1;
     int ans = -1;
+    
     while(left <= right){
         int mid = left + (right - left)/2 ;
         if(arr[mid] == key){
