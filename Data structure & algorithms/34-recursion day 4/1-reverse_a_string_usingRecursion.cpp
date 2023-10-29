@@ -1,24 +1,25 @@
 #include<iostream>
 using namespace std;
 
-bool isPalindrome(string s, int start, int end){
-    //base case
+void reverse(string &s, int start, int end){
+    // base case
     if(start > end){
-        return true;
+        return;
     }
 
-    if(s[start] != s[end]){
-        return false;
-    }else{
-        return isPalindrome(s, start++, end--);
-    }
+    swap(s[start], s[end]);
+    start++; end--;
+
+    reverse(s, start, end);
 }
 
 int main()
 {
-    //check if a string is palindrome
-    string s = "abcdeedcba";
+    string ch = "fojle";
 
-    cout << isPalindrome(s, 0, 10) << endl;
+    reverse(ch, 0, ch.length() -1);
+
+    cout << ch << endl;
+    
     return 0;
 }
