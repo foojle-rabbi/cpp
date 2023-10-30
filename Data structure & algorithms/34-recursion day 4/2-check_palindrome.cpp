@@ -8,7 +8,7 @@ bool isPalindrome(string ch, int s, int e){
     }
 
     if(ch[s] == ch[e]){
-        return isPalindrome(ch, s++, e--);
+        return isPalindrome(ch, s+1, e-1);
     }else{
         return false;
     }
