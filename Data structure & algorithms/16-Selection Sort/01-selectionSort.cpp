@@ -11,6 +11,7 @@ void display(int arr[], int n){
 
 void selectionSort(int arr[], int n){  
     int minIndex;
+
     for(int i = 0; i < n -1; i++){
         display(arr, n);
         minIndex = i;
@@ -19,6 +20,7 @@ void selectionSort(int arr[], int n){
                 minIndex = j;
             }
         }
+        
         if(minIndex != i){
             swap(arr[minIndex], arr[i]);
         }
