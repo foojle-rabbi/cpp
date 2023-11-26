@@ -26,22 +26,23 @@ int getRightIndex(int *arr, int s, int e){
     int j = e;
 
     while(i < rightIndex && j > rightIndex){
-        while(arr[i] < arr[rightIndex]){
+        while(arr[i] < pivot){
             i++;
         }
 
-        while(arr[j] > arr[rightIndex]){
+        while(arr[j] > pivot){
             j--;
         }
 
-        while(i < rightIndex && j > rightIndex){
+        if(i < j){
             swap(arr[i++], arr[j--]);
         }
     }
+    print(arr, 14);
     return rightIndex;
 }
 
-void countSort(int *arr, int start, int end){
+void quickSort(int *arr, int start, int end){
     //base case 
     //condition
     if(start >= end){
@@ -51,19 +52,19 @@ void countSort(int *arr, int start, int end){
     int p = getRightIndex(arr, start, end);
 
     //sort the left part of the array
-    countSort(arr, start, p - 1);
+    quickSort(arr, start, p - 1);
 
     //sort the right part of the array
-    countSort(arr, p + 1, end);
+    quickSort(arr, p + 1, end);
 }
 
 int main()
 {
-    int arr[] = {90, 20, 8, 2, -7, 23, 12, 5, 9};
+    int arr[] = {5, 0, 5, 2, 5};
     int size = sizeof(arr) / sizeof(int);
 
     print(arr, size - 1);
-    countSort(arr, 0, size -1);
+    quickSort(arr, 0, size -1);
     print(arr, size-1);
     return 0;
 }
