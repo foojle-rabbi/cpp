@@ -23,6 +23,10 @@ void insetAtHead(node* &head, int data){
 }
 
 void insertAtLast(node* &head, int data){
+    if(head == NULL){
+        insetAtHead(head, data);
+        return;
+    }
     node *newNode = new node(data);
 
     node *temp = head;
@@ -61,18 +65,84 @@ void deleteAtFirst(node* &head){
 }
 
 void delteAtLast(node* &head){
+    node* prev = head;
+    node* current = head->next;
+
+    while(current->next != NULL){
+        prev = prev->next;
+        current = current -> next;
+    }
+
+    delete current;
+    prev -> next = NULL; 
+}
+
+void deleteAtPos(node* &head, int pos){
+    if(pos == 0){
+        deleteAtFirst(head);
+        return;
+    }
+    
+    node* prev = head;
+    node* current = head->next;
+    int i = 1;
+
+    while(i < pos){
+        prev = prev->next;
+        current = current->next;
+        i++;
+    }
+
+    prev->next = current->next;
+    delete current;
+}
+
+void deleteNode(node* &prev, node* current){
+    prev->next = current->next;
+    delete current;
+
+    return;
+}
+
+void deletByValue(node* &head, int val){
+    if(head->data == val){
+        deleteAtFirst(head);
+        return;
+    }
+
+    node* prev = head;
+    node* current = head->next;
+
+    while(current != NULL){
+        if(current->data == val){
+            deleteNode(prev, current);
+            return;
+        }else{
+            prev = prev->next;
+            current = current->next;
+        }
+    }
+    cout << val << " is not found" << endl;
+}
+
+bool searchValue(node* &head, int val){
     node* temp = head;
 
     while(temp != NULL){
+        if(temp->data == val){
+            return true;
+        }
         temp = temp->next;
     }
-
-    
-
+    return false;
 }
 
 //display function
 void display(node* &head){
+    if(head == NULL){
+        cout << "Empty linked list" << endl;
+        return;
+    }
     node* temp = head;
 
     while(temp != NULL){
@@ -95,9 +165,34 @@ int main()
     display(head);
 
     insertAtPosition(head, 13, 0);
+    insertAtPosition(head, 4, 1);
+    insertAtPosition(head, 20, 3);
     display(head);
 
-    deleteAtFirst(head);
+    // deleteAtPos(head, 5);
+    // display(head);
+
+    cout << searchValue(head, 18) << endl;
+
+    deletByValue(head, 10);
+    deletByValue(head, 5);
+    deletByValue(head, 12);
+    deletByValue(head, 15);
+    deletByValue(head, 13);
+    deletByValue(head, 4);
+    deletByValue(head, 20);
     display(head);
+
+    insertAtLast(head, 15);
+    display(head);
+
+    // insetAtHead(head, 10);
+    // display(head);
+
+    /*
+    okay eikhane aisha ami eitai bolte pari je vai ekhon jehetu shob gula insert kora gula deleted hoiya geche tar mane amar kono node o nai abar head = null;
+    toh ei obosthay ami jodi last e insert korte jai tahole amr insertion hocche na. But jodi ami fist e insert korte jai tokhon kintu abar thiki kaj korteche.
+    tai aamr insetAtHead function e ekata extra condition use korte pari.
+    */
     return 0;
 }
