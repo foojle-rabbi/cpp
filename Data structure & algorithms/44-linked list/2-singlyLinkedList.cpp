@@ -100,8 +100,6 @@ void deleteAtPos(node* &head, int pos){
 void deleteNode(node* &prev, node* current){
     prev->next = current->next;
     delete current;
-
-    return;
 }
 
 void deletByValue(node* &head, int val){
@@ -116,6 +114,11 @@ void deletByValue(node* &head, int val){
     while(current != NULL){
         if(current->data == val){
             deleteNode(prev, current);
+            /*
+            ha Mr. ei je function ta make kora hoiche eikhane kebol single bar ekta node delte koira return kore. kintu tumi joidi shokil duplicates delete 
+            korte chao tahole tomare current pointer tare update korte hobe cause current pointer tare kintu deleteNode delte kore diche. jodi current re 
+            current = prev->next;  na koro tahole funtion thik moto kaaj korbe na.
+            */
             return;
         }else{
             prev = prev->next;
@@ -152,6 +155,26 @@ void display(node* &head){
     cout << endl;
 }
 
+/*
+Accha ei je function ta likhchi eita ashole eita dekhar jonno likhchilam je vai amra toh kono ekta node delete korte gele shob shomoy 2 ta pointer use kortam 
+ekta chilo prev ar arekta hoichilo gia current; toh she jonno ami chiatechilam je matro ekta pointer use koira ki delte kora jay kina. hae eita sotto je vai tumi
+ekta temp pointer dia majher node ta re skip korte parba. but boro shomossa holo gia je tumi oi je node tare delete korte chichila tare memory free korte parba na
+toh memory jodi free na korte paro taile toh oita efficient hoilo na tai na. tai tomare memory free korar jonno holeo 2 ta pointer use korte hoibo.
+*/
+
+// void deleteNew(node* &head, int pos){
+//     node* temp = head;
+//     int i = 1;
+
+//     while(i < pos){
+//         i++;
+//         temp = temp->next;
+//     }
+
+//     temp->next = temp->next->next;
+//     delete temp->next;
+// }
+
 
 int main()
 {
@@ -183,7 +206,7 @@ int main()
     deletByValue(head, 20);
     display(head);
 
-    insertAtLast(head, 15);
+    // insertAtLast(head, 15);
     display(head);
 
     // insetAtHead(head, 10);
@@ -194,5 +217,8 @@ int main()
     toh ei obosthay ami jodi last e insert korte jai tahole amr insertion hocche na. But jodi ami fist e insert korte jai tokhon kintu abar thiki kaj korteche.
     tai aamr insetAtHead function e ekata extra condition use korte pari.
     */
+
+    // deleteNew(head, 3);
+    // display(head);
     return 0;
 }
