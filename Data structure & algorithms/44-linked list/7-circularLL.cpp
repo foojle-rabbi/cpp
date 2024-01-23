@@ -120,6 +120,13 @@ void traversal(node* &head){
     // }
     // cout << endl;
 
+    /*
+    Okay vai saheb ekta jinish linked list er mane circular linked list er kkhetre mone rakhbe sheta hocche gia je vai jodi tmi normal while loop dia print
+    korte jao tahole jodi condition lagao while(temp != head) tahole loop ta ekbar o ghurbe na cause vai temp toh alredy e amar head e point koira rakhche. and
+    then jodi ei while(temp->next != head) condition lagao tahole shei kkhetre last node er value print korte parbe na cause last node er next e toh head. tai 
+    shob cheye valo ar efficient hoy jodi do while loop use kora hoy cause do while loop condition pore check kore. tai first er value print kore jabe.
+    */
+
     do{
         cout << temp->data << " ";
         temp = temp->next;
