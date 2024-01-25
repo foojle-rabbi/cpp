@@ -50,6 +50,29 @@ node* middleOfLL(node* head){
     return head;
 }
 
+//there is an another approch of it: which will take n/2 time complexity.
+node* middleOfLLOptimal(node* head){
+    if(head == NULL){
+        return head;
+    }
+
+    node* slow = head;
+    node* fast = head->next;
+    /*
+        Accha eikhane ami jodi fast pointer ta ke head er next e point na kori tahole loop ghurar shomoy amar slow pointer ek dhap agaiya jaibo ga. jei ta kina
+        vul ans return korbe. tai fast ke amar head er next e point koranO lagche.
+    */
+
+    while(fast != NULL){
+        slow = slow->next;
+        fast = fast ->next;
+        if(fast != NULL){
+            fast = fast->next;
+        }
+    }
+    return slow;
+}
+
 int main()
 {
     node* head = NULL;
@@ -58,8 +81,8 @@ int main()
     insertAtLast(head, 3);
     insertAtLast(head, 4);
     insertAtLast(head, 5);
-    insertAtLast(head, 6);
-    head = middleOfLL(head);
+    // insertAtLast(head, 6);
+    head = middleOfLLOptimal(head);
     display(head);
     return 0;
 }

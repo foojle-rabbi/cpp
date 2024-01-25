@@ -3,56 +3,57 @@ using namespace std;
 
 class node{
     public:
-    int val;
+    int data;
     node* next;
 
     //constructor
-    node(int v) : val(v), next(nullptr) {}
+    node(int val) : data(val), next(nullptr) {}
 };
 
 void display(node* head){
     cout << "Elements of list: ";
     while(head != nullptr){
-        cout << head->val << " ";
-        head = head->next;
+        cout << head->data << " ";
+        head = head -> next;
     }
     cout << endl;
 }
 
 void insertAtLast(node* &head, int val){
     node* newNode = new node(val);
-    if(head == nullptr){
+    if(head == NULL){
         head = newNode;
         return;
     }
 
     node* temp = head;
-    while(temp->next != NULL){
+
+    while(temp->next != nullptr){
         temp = temp->next;
     }
+
     temp->next = newNode;
 }
 
-node* Kreverse(node* head, int k){
-    //base case
-    if(head == NULL){
-        return NULL;
-    }
-    node* prev = NULL;
-    node* current = head;
-    node* forward = NULL;
 
-    for(int i = 0; i < k; i++){
-        forward = current->next;
+void reverseList(node* &head){
+    if(head == NULL || head->next == NULL){
+        return;
+    }
+
+    node* prev = nullptr;
+    node* current = head;
+    node* forward = nullptr;
+
+    while(current != NULL){
+        forward = current -> next;
         current->next = prev;
         prev = current;
         current = forward;
     }
-    
-    head->next = Kreverse(current, k);
-    return prev;
-}
 
+    head = prev;
+}
 int main()
 {
     node* head = NULL;
@@ -63,9 +64,7 @@ int main()
     insertAtLast(head, 5);
     display(head);
 
-    head = Kreverse(head, 2);
+    reverseList(head);
     display(head);
     return 0;
 }
-
-//not solved

@@ -175,6 +175,16 @@ toh memory jodi free na korte paro taile toh oita efficient hoilo na tai na. tai
 //     delete temp->next;
 // }
 
+bool isCircular(node* head){
+    node* temp = head->next;
+    while(temp != NULL){
+        if(temp->next == head){
+            return true;
+        }
+        temp = temp->next;
+    }
+    return false;
+}
 
 int main()
 {
@@ -197,14 +207,14 @@ int main()
 
     cout << searchValue(head, 18) << endl;
 
-    deletByValue(head, 10);
-    deletByValue(head, 5);
-    deletByValue(head, 12);
-    deletByValue(head, 15);
-    deletByValue(head, 13);
-    deletByValue(head, 4);
-    deletByValue(head, 20);
-    display(head);
+    // deletByValue(head, 10);
+    // deletByValue(head, 5);
+    // deletByValue(head, 12);
+    // deletByValue(head, 15);
+    // deletByValue(head, 13);
+    // deletByValue(head, 4);
+    // deletByValue(head, 20);
+    // display(head);
 
     // insertAtLast(head, 15);
     display(head);
@@ -220,5 +230,13 @@ int main()
 
     // deleteNew(head, 3);
     // display(head);
+
+
+    //temon kichu na; isCircular() er ekta function check korar jonno ashlam. And you know what the function is working fine.
+    if(isCircular(head)){
+        cout << "List is circular" << endl;
+    }else{
+        cout << "List is not circular" << endl;
+    }
     return 0;
 }

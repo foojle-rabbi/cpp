@@ -1,9 +1,5 @@
-#include<iostream>
-using namespace std;
 
-int main()
-{
-    /*
+
     vai linkdes list nia ar ki komu. mota muti ja janosh tai. linked list hoilo ekta linear data structure. array ar linked list er moddhe kichu parthokko ache.
     array er moddhe insetion delation value update kora hard but linked list ei kaaj gula kora shohoj. linked list kaaj kore node concept dia. ekta node
     er 2 ta part ekta hoilo gia amar data part ar arekta hoilo gia amar next pointer jetate amar onno arekta node er address thakbe.
@@ -28,6 +24,3 @@ int main()
             3. delete at middle.
         3. traverse
         4. searching.
-    */
-    return 0;
-}
