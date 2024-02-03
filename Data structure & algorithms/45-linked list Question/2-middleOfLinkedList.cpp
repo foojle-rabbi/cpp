@@ -34,6 +34,7 @@ void display(node* head){
     cout << endl;
 }
 
+//---------- 1st approch -----------------
 int getLen(node* head){
     int count = 0;
     while(head != NULL){
@@ -50,6 +51,7 @@ node* middleOfLL(node* head){
     return head;
 }
 
+//---------- 1st approch -----------------
 //there is an another approch of it: which will take n/2 time complexity.
 node* middleOfLLOptimal(node* head){
     if(head == NULL){
@@ -70,6 +72,17 @@ node* middleOfLLOptimal(node* head){
             fast = fast->next;
         }
     }
+    
+    /*
+        accha eikhane arekta shundor function ache mane condition ache jeita dia khub easily e middle elements khuijja paoya jay. sheta 
+        hocche while(fast != NULL && fast->next != NULL) ei condition use kortle 2nd time abar vitore gia arekta condition check korar dorkar
+        nai.
+    */
+    while(fast != NULL && fast->next != NULL){
+        fast = fast->next->next;
+        slow = slow->next;
+    }
+
     return slow;
 }
 

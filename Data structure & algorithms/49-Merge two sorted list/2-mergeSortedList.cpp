@@ -29,19 +29,24 @@ void display(node* head){
 }
 
 node* solve(node* &first, node* &second){
-    //case handle
-    // if(first->next == NULL){
-    //     return second;
-    // }
-    // if(second->next == NULL){
-    //     return first;
-    // }
+    // case handle
+    if(first == NULL){
+        return second;
+    }
+    if(second== NULL){
+        return first;
+    }
 
     node* curr1 = first;
     node* next1 = first->next;
 
     node* curr2 = second;
     node* next2 = nullptr;
+    //if there is only one node on each both.
+    if(next1 == NULL){
+        curr1->next = curr2;
+        return;
+    }
 
     while(next1 != NULL && curr2 != NULL){
         if((curr1->data <= curr2->data) && (next1->data >= curr2->data)){
@@ -49,7 +54,7 @@ node* solve(node* &first, node* &second){
             next2 = curr2->next;
             curr2->next = next1;
 
-            curr1 = next1;
+            curr1 = curr2;
             curr2 = next2;
         }else{
             curr1 = curr1->next;
