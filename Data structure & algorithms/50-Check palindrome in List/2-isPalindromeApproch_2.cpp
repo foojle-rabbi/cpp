@@ -61,6 +61,18 @@ node* reverse(node* head){
 bool isPalindrome(node* &head){
     node *middle = getMid(head);
     node* temp = reverse(middle->next);
+
+    node* head1 = head;
+
+    while(temp != NULL){
+        if(head1->data == temp->data){
+            temp = temp->next;
+            head1 = head1->next;
+        }else{
+            return false;
+        }
+    }
+    return true;
 }
 
 int main()
@@ -68,10 +80,11 @@ int main()
     node* head = nullptr;
     insertAtLast(head, 1);
     insertAtLast(head, 2);
-    insertAtLast(head, 3);
+    // insertAtLast(head, 3);
     insertAtLast(head, 3);
     insertAtLast(head, 2);
     insertAtLast(head, 1);
+    // insertAtLast(head, 1);
     display(head);
 
     if(isPalindrome(head)){
