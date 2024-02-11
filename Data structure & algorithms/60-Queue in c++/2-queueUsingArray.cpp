@@ -16,6 +16,7 @@ class queue{
         arr = new int[size];
         rear = -1;
         front = -1;
+        cout << "size of array: " << sizeof(arr) << endl;
     }
 
     void enqueue(int val){
@@ -46,12 +47,12 @@ class queue{
 
     int display(void){
         int i = front;
+
         cout << "Elements of queue: ";
         while(i != rear){
-            cout << arr[front] << " ";
-            front = (front + 1) % size;
-            i++;
-        }
+            cout << arr[i] << " ";
+            i = (i + 1) % size;
+        }cout << arr[rear];
         cout << endl;
     }
 };
@@ -62,6 +63,7 @@ int main()
     q.enqueue(5);
     q.enqueue(10);
     q.enqueue(20);
+    q.enqueue(30);
     q.enqueue(30);
 
     q.display();
