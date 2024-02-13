@@ -24,6 +24,7 @@ class queue{
     void enqueue(int val){
         if((rear + 1) % size == front){
             cout << "Queue is full" << endl;
+            return;
         }
 
         if(front == -1){
@@ -43,6 +44,8 @@ class queue{
         if(rear == front){
             rear = front = -1;
         }
+
+        front = (front + 1) % size;
     }
 
     void display(void){
@@ -59,6 +62,14 @@ class queue{
             i = (i + 1) % size;
         }cout << arr[rear] << endl;
     }
+
+    int rearVal(void){
+        if(front == -1){
+            return -1;
+        }
+
+        return arr[rear];
+    }
 };
 
 int main()
@@ -72,6 +83,15 @@ int main()
         5. size
     */
 
+    queue q(5);
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
+    q.display();
 
+    q.dequeue();
+    q.display();
+
+    cout << q.rearVal() << endl;
     return 0;
 }
