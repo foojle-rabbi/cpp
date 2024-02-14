@@ -13,4 +13,5 @@ problems remainings:
 3. minimum bracket(55)
 4. smallest previous (56)
 5. largest rectangle in histogram (56)
-6. 
+6. dequeeu
+7. bit manupilation
