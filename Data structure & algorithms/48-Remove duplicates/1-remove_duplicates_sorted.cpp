@@ -43,7 +43,7 @@ void removeDuplicates(node* &head){
         while(temp->data == temp->next->data){
             // deleteThis(temp, temp->next);
             
-            //iccha korte alada function o call kora jaibo abar iccha korte ei 3 line er code dia o delete kora jaibo. kahini same e;
+            //iccha korte alada function o call kora jaibo abar iccha korle ei 3 line er code dia o delete kora jaibo. kahini same e;
             node* nodeToDelete = temp->next;
             temp->next = temp->next->next;
             delete nodeToDelete;            

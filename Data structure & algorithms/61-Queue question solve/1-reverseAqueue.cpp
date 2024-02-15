@@ -39,5 +39,7 @@ int main()
     reverseQueue(q);
     display(q);
 
+
+    //this reverse thing can be also done by using stack.
     return 0;
 }
