@@ -1,5 +1,34 @@
 #include<iostream>
+#include<queue>
 using namespace std;
+
+void display(queue<int> q){
+    cout << "Items of queue: ";
+    while(!q.empty()){
+        cout << q.front() << " ";
+        q.pop();
+    }
+    cout << endl;
+}
+
+void interLeave(queue<int> &q){
+    //first approach using one queue
+    queue<int> temp;
+    for(int i = 0; i <= q.size() / 2 + 1; i ++){
+        temp.push(q.front());
+        q.pop();
+    }
+    display(temp);
+
+    while(!temp.empty()){
+        q.push(temp.front());
+        temp.pop();
+        q.push(q.front());
+        q.pop();
+    }
+
+    //
+}
 
 int main()
 {
@@ -10,5 +39,16 @@ int main()
         And yes you can only use one stack only; YOu can not use extra space except a stack only;
     
     */
+    queue<int> q;
+    for(int i = 11; i <= 18; i++){
+        q.push(i);
+    }
+
+    display(q);
+
+    interLeave(q);
+
+    display(q);
+
     return 0;
 }
