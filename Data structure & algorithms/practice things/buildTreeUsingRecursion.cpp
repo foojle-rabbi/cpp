@@ -35,6 +35,7 @@ void buildTree(node* &root){
 }
 
 //i dont know how but i made a mistake on that code. lets write again
+//Ashole eikahen ami temon kono major vul kri nai. just nije nije variable name vul lekhchi temp er jay gay root use kore felechi.
 node* buildTreeRec(void){
     cout << "Enter the data: ";
     int data;
@@ -63,10 +64,11 @@ void levelOrder(node* root){
     queue<node*> q;
     q.push(root);
 
+    int levelSize;
     while(!q.empty()){
-        int numberOfnodes = q.size();
+        levelSize = q.size();
 
-        for(int i = 0; i < numberOfnodes; i++){
+        for(int i = 0; i < levelSize; i++){
             node* temp = q.front();
             q.pop();
 
@@ -75,23 +77,36 @@ void levelOrder(node* root){
 
             //eibar left child re push koro jodi thake
             if(temp->left){
-                q.push(temp->right);
+                q.push(temp->left);
             }
             
             if(temp->right){
-                q.push(root->right);
+                q.push(temp->right);
             }
         }   
         cout << endl;
     }
 }
 
+void inOrder(node* root){
+    if(root == NULL){
+        return;
+    }
+    inOrder(root->left);
+    cout << root->data << " ";
+    inOrder(root->right);
+}
+
 int main()
 {
-    node* root = buildTreeRec();
+    // node* root = buildTreeRec();
+    node* root;
+    buildTree(root);
+
+    inOrder(root);
     // buildTree(root);
     levelOrder(root);
 
-    // input string: 10 3 1 -1 -1 17 -1 -1 7 -1 9 -1 -1 
+    // input string: 10 3 2 -1 -1 17 -1 -1 7 -1 9 -1 -1
     return 0;
 }
