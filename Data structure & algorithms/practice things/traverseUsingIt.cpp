@@ -1,5 +1,6 @@
 #include<iostream>
 #include<queue>
+#include<stack>
 using namespace std;
 
 class node{
@@ -21,9 +22,9 @@ node* buildTree(void){
         return NULL;
     }
 
-    node* newNode = new node(data);
+    node* root = new node(data);
     queue<node*> q;
-    q.push(newNode);
+    q.push(root);
 
     while(!q.empty()){
         node* temp = q.front();
@@ -50,7 +51,7 @@ node* buildTree(void){
             q.push(newNode);       
         }
     }
-
+    return root;
 }
 
 void display(node* root){
@@ -62,10 +63,32 @@ void display(node* root){
     display(root->right);
 }
 
+void inorderIterators(node* root){
+    if(root == NULL){
+        return;
+    }
+
+    stack<node*> s;
+
+    while(root != NULL || !s.empty()){
+        while(root != NULL){
+            s.push(root);
+            root = root->left;
+        }
+
+        root = s.top();
+        s.pop();
+
+        cout << root->data << " ";
+        root = root->right;
+    }
+}
+
 int main()
 {
     node* root = buildTree();
-    display(root);
+    // display(root);
+    inorderIterators(root);
     return 0;
 }
 
