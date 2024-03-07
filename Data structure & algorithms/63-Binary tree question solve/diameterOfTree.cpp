@@ -16,4 +16,9 @@ int main()
 রাইট এর হাইট বাহির কইরা রুট নোডের একটা নোড অর্থাৎ ১ প্লাস করে দেও।এখন যেহেতু ৩ টাই হইতে পারে। 
 
 আর আমরা জানি ডায়ামিটার একমাত্র ম্যাক্সিমাম হয় তাই তুমি একটা আন্সার এ এই ৩ টার মেক্স বাহির কইরা আন্সার রিটার্ন কর। ব্যাস।
+
+------------------
+tobe ha eikahne ekta kahini ache mane jhamela ache karon ami jodi same max height ar left diameter ar right diameter er hisab kori taile amar complexity aibo
+big o n^2 jeita optimised na. tobe eita optimized korar ekta way ache. just simple 1 line er code: ans = max(ans, 1 + leftHeight + rightHeight); ar ei ans ta 
+e hocche amar real ans. tobe ans er hoyto pass by refference othoba gloabal variable hisebe use kora jaite pare.
 */
