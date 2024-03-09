@@ -76,10 +76,53 @@ void levelOrder(Node* root){
     }
 }
 
+//first push right subtree
+/*
+Aree eikhne kahini hoiche ta ki je ami chacchi je ei je level order traversal ache na eikhane toh amar left to right level wise print hoy tai na? toh ekhon eita 
+aisha dekhlam je amar ulta orthat right to left ki print kora jay kina? 
+
+Do you what, print kora jay. just age queue te left push na koira just right push korlei hobe
+*/
+void levelOrderRev(Node* root){
+    if(root == NULL){
+        return;
+    }
+
+    //let declare a queue
+    queue<Node*> q;
+    q.push(root);
+    int levelSize;
+
+    while(!q.empty()){
+        levelSize = q.size();
+
+        for(int i = 0; i < levelSize; i++){
+            Node* temp = q.front();
+            q.pop();
+
+            cout << temp->data << " ";
+
+            //enqueue if the node has right child too
+            if(temp->right){
+            q.push(temp->right);
+            }
+
+            //enqueue if the node has left child
+            if(temp->left){
+                q.push(temp->left);
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     Node* root = buildTree();
+    cout << endl;
     levelOrder(root);
+    cout << endl;
+    levelOrderRev(root);
     return 0;
 }
 

@@ -156,6 +156,11 @@ int main()
     inorder(root);
     cout << endl;
     zigZag(root);
+
+    //an importannt kotha valo kore shon. eikahne toh tui vector re reverse kore ans push_back() korchot but tui ki emon ta korte parbi
+    // na je jate kore ekta left to right ar arekta right to left push hoy. jemon ta koira aichi amra lecture number 62 er moddhe 3 number
+    // file level order traversal e. Try that method
+
     return 0;
 }
 
