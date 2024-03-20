@@ -1,6 +1,80 @@
 #include<iostream>
 using namespace std;
 
+class Solution {
+public:
+    void solveLeft(Node* root, vector<int> &ans){
+        if(root == nullptr || root->left == nullptr && root->right == nullptr){
+            return;
+        }
+        ans.push_back(root->data);
+        if(root->left)
+            solveLeft(root->left, ans);
+        else
+            solveLeft(root->right, ans);
+    }
+    
+    void solveLeaf(Node* root, vector<int> &ans){
+        if(root == nullptr){
+            return;
+        }
+        
+        if(root->left == nullptr && root->right == nullptr){
+            ans.push_back(root->data);
+            return;
+        }
+
+        solveLeaf(root->left, ans);
+        solveLeaf(root->right, ans);
+    }
+    
+    void right(Node* root, vector<int> &ans){
+        if(root == nullptr || (root->left == nullptr && root->right == nullptr)){
+            return;
+        }
+        
+        if(root->right)
+            right(root->right, ans);
+        else
+            right(root->left, ans);
+        
+        ans.push_back(root->data);
+    }
+    
+    vector <int> boundary(Node *root)
+    {
+        vector<int> ans;
+        if(root == nullptr){
+            return ans;
+        }
+        
+        if(root->left == nullptr && root->right == nullptr){
+            ans.push_back(root->data);
+            return ans;
+        }
+        
+        ans.push_back(root->data);
+        solveLeft(root->left, ans);
+        /*
+        Accha oikhane ami jeivabe puro ta tree traverse korchi oivabe na korleo hoibo.
+        orthat first e left subtree er shob gula leaf node print koro, then right subtree er shob gula leaf nodes print koro. print bolte eikhane
+        ami store kora bujahichi. 
+        */
+        solveLeaf(root->left, ans);
+        solveLeaf(root->right, ans);
+        right(root->right, ans);
+        
+        return ans;
+    }
+
+    /*
+    Jaak vai finally onek chestar por shob gula test case passed koraite parchi. ashole coder korar aage joto ta easy mone hoice code kote 
+    gia kintu tootao easy lage nai.
+
+    er jonnoi bola je vai code koro beshi beshi kore code koro.
+    */
+};
+
 int main()
 {
     /*

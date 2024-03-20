@@ -96,12 +96,10 @@ void display(node* root){
     }
 }
 
-void pathFinder(node* root, int val, vector<int> &ans){
-    vector<int> currentPath;
+void pathFinder(node* root, int val, vector<int> &ans, vector<int> &currentPath){
     if(root == nullptr){
         return;
     }
-    cout << endl;
     
     currentPath.push_back(root->data);
     if(root->data == val){
@@ -109,13 +107,14 @@ void pathFinder(node* root, int val, vector<int> &ans){
         return;
     }
 
-    
-    pathFinder(root->left, val, ans);
+    /*
+    Finally path finder is working fine
+    */
+    pathFinder(root->left, val, ans, currentPath);
+    pathFinder(root->right, val, ans, currentPath);
 
     currentPath.pop_back();
-    pathFinder(root->right, val, ans);
 }
-
 int main()
 {
     /*
@@ -132,7 +131,8 @@ int main()
 
     //input string: 9 1 5 7 3 8 -1 -1 -1 -1 -1 -1 -1
     vector<int> ans;
-    pathFinder(root, 8, ans);
+    vector<int> currentPath;
+    pathFinder(root, 8, ans, currentPath);
 
     cout << endl;
     for(int i = 0; i < ans.size(); i++){
