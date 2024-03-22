@@ -5,6 +5,10 @@ class node{
 
 }
 
+/*
+
+*/
+
 node* lca(node* root, int n1, int n2){
     //base case
     if(root == nullptr){
@@ -48,6 +52,6 @@ int main()
     
     amar eikhane n1 = 1 hoy ar n2 = 3 hoy taile ei 2 tar e common jei node sheta hocche amar 4. taile amar ans o hobe 4.
     */
-    //okay first lets find path. of 2. the path will be 4->
+    //okay first lets find path. of 2. the path will be 4->2
     return 0;
 }
