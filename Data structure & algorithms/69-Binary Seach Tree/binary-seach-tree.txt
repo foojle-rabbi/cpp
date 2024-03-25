@@ -1,0 +1,13 @@
+accha binary tree shomporke toh amara er ager lecture gulate jene ashchi. ar tar sathe onek gula problems o solve korchi. toh ekhon tar motoi arekta concept seta
+hocche amader binary seach tree. orthar emon ek dhoroner tree jekhane root node er 2 ta child thakbe but but ekta catch ache seta holo left child should be less
+than the root node and right child vlue should be more than root node for each and every node. 
+
+like:           10
+                / \
+               7   20
+              / \    \
+             6   9    25 
+            /         / \
+           3        22   50
+
+eitai hoilo amar binary seach treee. eitar inorder traversal shob shomoy assending order e hobe. 
