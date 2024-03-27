@@ -84,11 +84,48 @@ void inorderIterators(node* root){
     }
 }
 
+bool isBst(node* root){
+    if(root == nullptr){
+        return false;
+    }
+
+    stack<node*> s;
+    node* prev = nullptr; //first e null initialize korte hobe!
+    
+    while(root != nullptr || !s.empty()){
+        while(root != nullptr){
+            s.push(root);
+            root = root->left;
+        }
+
+        root = s.top();
+        s.pop();
+
+        // if(prev != nullptr){
+        //     prev = root;
+        //     root = root->right;
+
+        //     if(prev->data > root->data)
+        //         return false;
+        // }
+        //jodi tomar prev node thake tokhon e toh tmi check korba je boro kina
+        if(prev != nullptr && prev->data > root->data){
+            return false;
+        }
+
+        prev = root;
+        root = root->right;
+    }
+    return true;
+}
+
 int main()
 {
     node* root = buildTree();
     // display(root);
     inorderIterators(root);
+
+    cout << endl << "Birnay tree is: " << isBst(root) << endl;
     return 0;
 }
 

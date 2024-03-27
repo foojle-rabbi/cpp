@@ -212,6 +212,9 @@ int main()
         1. first jinish ta holo bianry search tree te mone hoy duplicated thake na. but my question is duaplicates na thakle kemone hobe?
         2. second thing is duplicates thakle node delte hoy na. wait may be delete hobe. jodi right side o equal dei = ;
         NO bother equla sign dileo kaj hoy na. duplicates deletes hoy na.
+
+    chatGpt: So, in a standard implementation of a BST, duplicates are not allowed. If you require a data structure that can store 
+            duplicates, you might consider alternatives such as a multiset or a hash table, depending on your specific requirements
     */
     return 0;
 }
