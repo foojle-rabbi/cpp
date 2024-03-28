@@ -31,7 +31,7 @@ void insertInBst(node* &root, int data){
         prev = temp;
 
         //now chek if the inseting valus is less then temp->data
-        if(data <= temp->data){
+        if(data < temp->data){
             temp = temp->left;
         }else{
             temp = temp->right;
@@ -39,7 +39,7 @@ void insertInBst(node* &root, int data){
     }
 
     //loop shesh korcho mane ekhon temp null e point korteche ar prev node e point korteche. toh dekho je previous er left e insert korba naki right e?
-    if(data <= prev->data){
+    if(data < prev->data){
         prev->left = newNode;
     }else{
         prev->right = newNode;
@@ -97,6 +97,7 @@ void inorderIt(node* root){
         root = root->right;
     }
 }
+
 int main()
 {
     node* root = nullptr;

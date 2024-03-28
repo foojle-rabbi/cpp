@@ -105,7 +105,21 @@ bool isBst(node* root){
 //eita gelo amader chatgpt moshai er code ba logic ba approach. babbar miar logic code roiche. onar 2 ta approach chilo. ekta chilo vectore er maddhome
 // ar arekta chilo minus infinity theke + infinity projonto.
 
+bool isBST(node* root, int min, int max){
+    //first base case
+    if(root == nullptr){
+        return true;
+    }
 
+    if(root->data > min && root->data < max){
+        bool left = isBST(root->left, min, root->data);
+        bool right = isBST(root->right, root->data, max);
+
+        return (left && right);
+    }else{
+        return false;
+    }
+}
 int main()
 {
     /*
@@ -117,7 +131,7 @@ int main()
     cout << "Elements of tree: ";
     inorder(root);
 
-    cout << endl << "Birnay tree is: " << isBst(root) << endl;
+    cout << endl << "Birnay tree is: " << isBST(root, INT8_MIN, INT8_MAX) << endl;
 
     return 0;
 }
