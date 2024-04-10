@@ -146,6 +146,29 @@ pair<int, int> predSucc(node* root, int key){
     return {ans[pos-1], ans[pos+1]};
 }
 
+//accha upoer gula ami bad dei notun kore abar iterator er help e pred and succes ber korar chesta kori. jekhane amar prev and forward lagbe
+pair<int, int> inorderPredSucc(node* root, int key){
+    if(root == nullptr){return;}
+
+    stack<node*> s;
+    node* prev;
+    node* forward;
+
+    while(!s.empty() || root != nullptr){
+        while(root != nullptr){
+            s.push(root);
+            prev = root;
+            root = root->left;
+        }
+
+        root = s.top();
+        s.pop();
+
+        //accha apatoto bujhtechi na tai skip korlam. kal abar eitare try marmu. 
+
+
+    }
+}
 // input string: 10 23 15 -13 48 3 13 16 84 -1
 
 int main()

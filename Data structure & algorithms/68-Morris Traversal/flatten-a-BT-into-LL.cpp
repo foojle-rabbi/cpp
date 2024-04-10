@@ -9,7 +9,9 @@ int main()
                    2   5
                   / \    \          
                  3   4     6
+
                 <--this to this-->
+                
                  1
                   \
                    2
