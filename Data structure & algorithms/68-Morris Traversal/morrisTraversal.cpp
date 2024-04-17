@@ -118,7 +118,11 @@ void morrisTraversal(node* root){
             cout << current->data << " ";
             current = current->right;
         }else{
-            node* pred = findPred(current->left);
+            // node* pred = findPred(current->left);
+            node* pred = current->left;
+            while(pred->right != nullptr && pred != current){
+                pred = pred->right;
+            }
 
             if(pred->right == nullptr){
                 pred->right = current;
@@ -131,6 +135,8 @@ void morrisTraversal(node* root){
         }
     }
 }
+
+//jani na vai keno jani ei code ta amar kaaj korteche na. tai apatoto eitareo skip korte hoilo. but yes i will try it later
 
 int main()
 {
@@ -161,7 +167,7 @@ int main()
 
     node* root = nullptr;
     buildBst(root);
-    inorder(root);
+    // inorder(root);
 
     cout << endl;
 
