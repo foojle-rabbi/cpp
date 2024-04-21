@@ -11,6 +11,6 @@
     "files.autoSave": "afterDelay",
     "editor.cursorBlinking": "expand",
     "terminal.integrated.fontSize": 12,
-    "editor.fontSize": 12,
+    "editor.fontSize": 18,
     "cmake.configureOnOpen": false
 }
