@@ -1,0 +1,46 @@
+heap er concept ta amar kache khub e obak lagche. mane vai eita dekhar por mone hoiche ashole manusher matha je koto tuku shoktishali ta 
+bolar bahire ki shundor ekta concept bahir koira fello. okay ekhon ashi heap ki emon ekta jinish jeita deikha amar emon kotha bola. ashole heap
+
+what is heap?
+-> heap is a data drtucture. 
+-> heap is a complete binary tree that comes with heap order property. 
+
+accha uporer amar mote shob e bujhar kotha khali 2 ta kotha bad dia. ekta hoilo amara toh binary tree porchi binary search tree porchi. toh eikahne 
+bolche complete bianry tree ar arekta hocche heap order property.
+
+what is complete bianry tree?
+-> every level is completely build except the last level. 
+-> nodes always added froom the left. 
+
+accha eigular mane ki? ashole amra toh jani e je binary tree er 2 ta child thake. thik same concept eikahneo but eikhane difference ta hocche gia je 
+eitar each and every level full fill hoite hoibo(except the last level). ar data insert korar shomoy shob shomoy left side theke insert hoibo. eibar value 
+ja mon chay ta hok but insert will be done in left. 
+
+** there are two types of heap.
+    1. max heap
+    2. min heap
+
+1. max heap: vai sohoj bangla kothay koite gele max heap hocche emon ekta complete binary tree jar parents nodes er value shob shomoy greater than child nodes.
+orthat ami jodi root node theke hisab kori taile boro theke choto level e jabe. orthat 
+                50
+               /  \
+              40   30
+             / \   
+            20  15
+
+2. Min Heap: vai max heap er opposite tai hocche amr min heap. orthat max er moddhe boro theke chotto order er jaito er eikahne choto theke boro level e jabe ei tukui. 
+                20
+               /  \
+              30   40
+             / \   
+            50  55
+
+Hoo vai eituku e kahini. tobe eikhane mone rakhar moto ekta bishoy hocche gia amra toh eto din BT or BST jai korchi shob nodes er help e korchi ar pointer er sahajje 
+but eikhane amra heap er jonno use korbo (array);
+
+Heap implementation: shob shomoy array er size er beshi nite hobe ebong 0 index bad thakbe. orthat kono value thakbe na.
+properties: always inserted in the last. 
+
+operations:
+    1. insertion
+    2. delation

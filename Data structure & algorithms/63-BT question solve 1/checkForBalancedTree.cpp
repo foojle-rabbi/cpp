@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-height function
+// height function
 int height(Node* root){
     if(root == nullptr){
         return 0;
