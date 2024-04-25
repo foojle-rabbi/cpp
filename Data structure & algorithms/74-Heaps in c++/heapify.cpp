@@ -55,10 +55,22 @@ int main()
     int arr[] = {-1, 23, 54, 12, 87, 45, 32};
     int size = 7;
 
-    //size nia kechal lagte pare but kechaler kichu nai normal size e nibi. eitukui e taile ar - minus tinus kora lagbo na. ar ki
-    for(int i = size; i > 0; i--){
+    // size nia kechal lagte pare but kechaler kichu nai normal size e nibi. eitukui e taile ar - minus tinus kora lagbo na. ar ki
+    
+    //eikhane mone hoy ami arekta jinish mistake korechi ar sheta hocche gia amar. heapify te leaf nodes gula process korte hoy na. 
+    //ar maybe ei karonei last index theke shuru kore. haa eitai karon. ar shejonno jate hobe (n/2 theke 0) porjonto 
+    for(int i = size/2; i > 0; i--){
         heapify(arr, size, i);
     }
+
+    /*
+    Accha wait ekta jinish eikhane amra shob shomoy keno last index theke shuru korbo? first index theke hobe na kenO
+    naki first index thekeo heapify function work kore. okay left check.
+    */
+    
+    // for(int i = 1; i < size; i++){
+    //     heapify(arr, size, i);
+    // }
 
     cout << "Heap value: ";
     for(int i = 1; i < size; i++){

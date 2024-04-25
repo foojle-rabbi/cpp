@@ -40,7 +40,8 @@ void heapify(int *arr, int size, int index){
 void heapSort(int *arr, int n){
     int size = n;
     // step 1: 
-    swap(arr[1], arr[size]);
+    // swap(arr[1], arr[size]);
+    arr[1] = arr[size];
     size--;
 
     // step 2
@@ -58,9 +59,9 @@ int main()
     */
 
     int arr[] = {-1, 23, 54, 12, 87, 45, 32};
-    int size = 7;
+    int size = 6;
 
-    for(int i = size; i > 0; i--){
+    for(int i = size/2 ; i > 0; i--){
         heapify(arr, size, i);
     }
 
@@ -80,5 +81,6 @@ int main()
 }
 
 /*
-Jani na keno but the heap sort function is not woring. will have to solve later. 
+Jani na keno but the heap sort function is not working. will have to solve it later. 
+dont know why this thing is not working. I should ask it to gpt. 
 */

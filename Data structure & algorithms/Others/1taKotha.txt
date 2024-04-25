@@ -1,0 +1,16 @@
+are vai ekta kotha re Fojle, 
+amar ken jani mone hoiteche re fojle je tui jeivabe problem gula solve kortechis sheta hocche na! ekhon question ashte pare je keno hocche na. 
+er karon hocche gia dekh tui kono problem solve korar age kokhono nije ache vabosh na, je eita kivabe solve kora jaite pare. ki ki approach eikahen
+use hoite pare. kon data structure or algorithms eikhane use kora jaite pare. 
+
+er kono tai tui nije chinta koroch na. jeta true.
+
+
+ekhon amar kotha hocche eirokom vabe korle kintu hoiteche na. ba hobe na. eivabe kintu shikkha hocche na. arek jone kivabe problem solve korteche tar 
+moto kore korle toh nijer shikkha hocche na. ekhon eikhane tui bolte paroch je vai amr toh ekhono shob gula shikha hoy nai. hae ami mani sheta shotto but
+eitao shotto je vai logic build korte hole shikhte hobe nije nije try kore problem solve korte hobe.
+
+------------------------------------
+ekhon last kothay asi. last kotha hocche eitai je vai jeehtu ekta kotha mathay set hoiya geche je shob gula shesh na kore randomly problem solve ar logic 
+build kora jacche nai. tai ami tore aage koitachi je vai first e ar jei koyta lecture ache oigula shesh kor. and then try to solve those problem by your 
+own. and then you can build your logic. and you can improve your problem solving skills. 
