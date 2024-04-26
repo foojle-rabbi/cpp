@@ -1,0 +1,38 @@
+Are fojle ekta jinish mathay asche re.......
+
+sheta hocche gia apatoto tui jeivabe problem gula solve kortechsos thats not the correct way to solve this kind of problems I think. 
+Tui jeivabe problem solve kortechsos oita hocche gia tor copy korar moto. ortaht tui problem dekhos, problem bujhosh, ebong oikhan thekei 
+solution deikha solve koroch. toh emnite te toh nijer brain re kono pressure deoya hoiteche na. toh shikhbi kemne? 
+
+jak etodin ja hobar hoiche. ekhon apatoto purata course joldi jodli kore shesh kor then problem solve korish. ar shoon problem kivabe solve 
+korbi. amar mathay ekta idea asche. 
+
+
+--------------------------------- idea -------------------------------------
+1. first problem ta valo kore porbi. then bujhar chesta korbi je ki chaiche
+2. tarpor jodi problem ta bujhte paroch je tor kach theke ki chaiche tahole ei porjonto joto kichu shikhchos. joto logic build korchos oigula
+    dia chesta korbi je kivabe problem ta solve kora jay. 
+3. ar jodi problem tai na bujhosh taile youtube e oi problem tar explanation dekhbi. ami abaro boli oi problem tar expalanation not the solution
+    jodi youtube e explanation na pach taile chatGpt ache "geminiai" ache tader kach theke just problem ta bujhchi. 
+
+4. Nije nije kon data structure apply kora kon algorithm ta valo hobe oita chesta korbi. 
+5. jodi sheta na hoy taile gpt re just algorithm ta dite bolbi. not the soltuin. 
+6. tarpor nije nije try korbi. 
+
+I thik it will help you to build your logic on problem solving. 
+
+
+---------------------------- interview question ---------------------
+Dekh ekhon amar mathay arekta jinish ghurr paak khay sheta hocche smartly work korle hard work theke agaiya thaka jay. ar jodi smart + hard work
+hoy taile toh kono kotha e nai. 
+
+moto muti logic build korar por gpt geminiai ba onna no jei forum ba website ache oikhan theke "most asked interview question" ber korbi then oigula
+solve korbi. Tor dola je shob gula solve korte hoibo emon kono kotha nai. ar parle topic wise problem ber kore solve koris.
+
+
+-------------------------- amar kotha ------------------------------
+dekh vai tui janosh je ami eto kicchu jani na. onek shomoy ami vul bal onek kichu kore boshe pore gia bujhte pari je ei gula ami na korleo partam ba 
+onno vabe korle aro valo hoto. jak soon i will figure out the solution insha-allah. ar ho ektai kotha etto pressure nish na allah er upor vorsha rakh 
+ar doua kor. ar koshto kore ja try kore ja allah er protidan dibe. 
+
+most importantly you need to maintain the constistancy. 
