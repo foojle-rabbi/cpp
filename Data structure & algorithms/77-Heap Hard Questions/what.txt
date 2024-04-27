@@ -1,0 +1,10 @@
+vai eikhane mone hoy achei 3 ta question but the problem is that they all are hard. thats why not i am skipping 
+them all. as i am not trying to solve the hard question. Thats not mean that i wont solve the hard question. I will
+but not now. 
+
+
+ar ajker boro ekta bishoy ki janosh. aichilam heap er ager jei question gula ache sheigula solve korar jonno but
+unfortunately amar display te problem thakay (flickering) ami valo kore problem gula te concentrate korte partechi na.
+Na hoy ajke notun ar kono topic na poira kebol previous problem gula e solve kortam.
+
+but unfortunately iccha haraiya felchi. tai ekhon apatoto just sql er kichu problem HackerRank e solve krotechi. 
