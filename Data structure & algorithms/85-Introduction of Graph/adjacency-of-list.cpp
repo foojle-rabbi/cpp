@@ -20,7 +20,6 @@ void printGraph(unordered_map<int, list<int> > &adj, int v){
         cout << endl;
     }
     // cout << "print function called";
-
 }
 
 int main()
