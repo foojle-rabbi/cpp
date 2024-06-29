@@ -7,7 +7,7 @@ struct TrieNode {
     // pointer array for child nodes of each node
     TrieNode* childNode[26];
 
-    // Used for indicating ending of string
+    // Used for indicating ending of a string
     bool wordEnd;
 
     TrieNode()
@@ -98,4 +98,4 @@ int main()
         cout << "key is not found\n";
     }
     return 0;
-}
+} 
