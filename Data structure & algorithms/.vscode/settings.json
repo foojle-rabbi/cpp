@@ -8,10 +8,10 @@
         "iostream": "cpp",
         "vector": "cpp"
     },
-    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
     "files.autoSave": "afterDelay",
     "editor.cursorBlinking": "expand",
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontSize": 13,
     "editor.fontSize": 14,
     "cmake.configureOnOpen": false
 }
