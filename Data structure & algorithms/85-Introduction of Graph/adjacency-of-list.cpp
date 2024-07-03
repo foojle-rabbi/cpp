@@ -68,4 +68,4 @@ valo kore use korte jani na. jodio hello world channel theke dekhchi but kivabe 
 moto output ashtechilo na. but ekhon jehetu unordered_map<int, list<int> > use kortechi tai ekhon abar thik moto e kaj korteche. 
 */
 
-// 0 1 0 2 1 3 1 2 2 3 2 4 4 3
+//input string: 0 1 0 2 1 3 1 2 2 3 2 4 4 3
