@@ -11,6 +11,11 @@ ami jodi condition nije theke lekhi tahole
         return cycle present;
     }
 
+    Fojle beshi kichu na. just first e ekta cycle oyala grpah aak. then bfs traversal kor mane dry run kor. dekhbi oikhane ekta 
+    node er kache 2 3 ta path thake jaouar jonno. toh oikhane jodi kono ekta node already visited (karon oita parent node) 
+    hoy taile jaito na. but cycle oyala grpah e visited grpah e jaite chibo but oitkhane dekhbi oita parents na. tar manei amar
+    oikhane cycle present ache. concept khali parents node er e. 
+
 */
 
 int main()
