@@ -6,10 +6,8 @@
 using namespace std;
 
 unordered_map<int, list<int> > adj;
-void takeInput(void){
-    int vertices, u, v;
-    cout << "enter the number of vertice: ";
-    cin >> vertices;
+void takeInput(int vertices){
+    int u, v;
 
     cout << "Enter the input string: ";
     while(vertices--){
@@ -90,12 +88,15 @@ int main()
     taile eikhane amar topological sort hobe: emon je shob shomoy amar 1, 2, 3, 4, 5, 6 tar moddhe thaka list er value er aage
     print hobe. 
     */
-    takeInput();
+
+    int nodes;
+    cout << "enter the number of nodes: ";
+    cin >> nodes;
+    takeInput(nodes);
     display();
 
     // suppose my grpah is discontinoued
     unordered_map<int, bool> visitedDfs;
-    int nodes = 8;
     cout << "Dfs traversal: ";
     for(int i = 1; i <= nodes; i++){
         if(visitedDfs[i] != true){
@@ -134,3 +135,5 @@ adjacent list:
 
 arekta grpah er adjacency list er input string: 8 3 4 3 2 2 1 1 5 5 7 6 5 6 8 8 7
 */
+
+//last notebook's graph: 4 1 2 1 4 3 4 4 5 

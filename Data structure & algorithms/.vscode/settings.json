@@ -8,7 +8,7 @@
         "iostream": "cpp",
         "vector": "cpp"
     },
-    "editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "monaco, Consolas, 'Courier New', monospace",
     "files.autoSave": "afterDelay",
     "editor.cursorBlinking": "expand",
     "terminal.integrated.fontSize": 13,
