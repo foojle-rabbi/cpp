@@ -28,7 +28,7 @@ int main()
         while (number != 0)
         {
             if(number % 10 == 1){
-                decimal = decimal + exponent(i);
+                decimal = decimal + pow(2, i);
                 }
             i++;
             number = number / 10;

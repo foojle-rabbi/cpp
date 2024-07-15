@@ -7,6 +7,7 @@ int main()
     int binary;
     cout<<"Enter a binary number: ";
     cin>>binary;
+    
     int ans = 0, i = 0;
     while (binary != 0)
     {
