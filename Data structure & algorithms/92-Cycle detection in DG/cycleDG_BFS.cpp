@@ -9,7 +9,9 @@ int main()
     dfs er use korte pari. toh previous folder e amra cycle ditect in directed graph using dfs(recursive function) korchilam. toh
     oikhane amader extra kichu data structure legechilo. jeigula holo vistied ar dfsVisited. 
 
-    ar ajke amra same problem mane detect cycle in directed graph using bfs shikhbo. 
+    ar ajke amra same problem mane detect cycle in directed graph using bfs shikhbo. ar eikhane amra kahn's algorithms er use 
+    korbo. just khali ekta count variable rakhbo. jodi cycle thake tahole count == n hobe. ar jodi cycle present thake tahole
+    count != n; where n is the number of nodes; hobe. 
     */
     return 0;
 }
