@@ -14,7 +14,7 @@ what is complete bianry tree?
 
 accha eigular mane ki? ashole amra toh jani e je binary tree er 2 ta child thake. thik same concept eikahneo but eikhane difference ta hocche gia je 
 eitar each and every level full fill hoite hoibo(except the last level). ar data insert korar shomoy shob shomoy left side theke insert hoibo. eibar value 
-ja mon chay ta hok but insert will be done in left. 
+ja mon chay ta hok but insert will be done in the left. 
 
 ** there are two types of heap.
     1. max heap
