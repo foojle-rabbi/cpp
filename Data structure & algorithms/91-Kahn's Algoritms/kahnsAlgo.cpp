@@ -12,7 +12,7 @@ Kahn'a algorithms:
     3. Do bfs with some changes
         a. pop front node
         b. find the neighbours
-        c. degrees the indegree
+        c. decrease the indegree
         d. now at the same time push the nodes which indegrees become o after removing front node. 
 */
 
@@ -46,13 +46,14 @@ class grpah{
         cout << "Topo using bfs called " << endl;
         queue<int> q;
 
-        //i think amar main vul tai hoiche eikhnae. jemon eikhane ami joto ta degree thik toto tai vector nichi. tobe i head that
+        //i think amar main vul tai hoiche eikhnae. jemon eikhane ami joto ta degree thik toto tai vector nichi. tobe i heard that
         //it is safe to take n + 1; and ami arekta vul korchi je shobgulare 0 dia initialize kori nai. 
         vector<int> indegree(7, 0);
 
         //wrong 
         // vector<int> indegree(6);
-
+        
+        //pura ta grpah traverse kore indegrees er man gula store koro. 
         for(auto i : adj){
             cout << "Entered into the indegrees loop" << endl;
             //eikhane kothao vul ache. i dont know where but eikhanei. cause er porei ar loop chole na. 

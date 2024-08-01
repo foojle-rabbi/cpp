@@ -15,3 +15,9 @@ int main()
     */
     return 0;
 }
+
+/*
+Tokhon to thiki bujhchilam tai ei koyekta lekha e lekhchilam but ekhon je age ki bujhe eigula lekhchilam shetai bujhtechi na. 
+she jonno amar mone hoy er por theke aro details e lekha dorkar ar sathe eigula abar dekhar dorkar ache and practice er o dorkar
+ache. 
+*/
