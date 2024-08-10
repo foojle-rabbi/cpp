@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main()
@@ -13,6 +14,10 @@ int main()
     korbo. just khali ekta count variable rakhbo. jodi cycle thake tahole count == n hobe. ar jodi cycle present thake tahole
     count != n; where n is the number of nodes; hobe. 
     */
+
+    vector<int> adj[10];
+
+
     return 0;
 }
 
