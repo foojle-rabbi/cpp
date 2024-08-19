@@ -26,7 +26,7 @@ int main()
     orthat kono ekta jinish keno use kormu, keno use korbo na. ba kokhon konta use korte hobe sheita. 
 
     toh prothome jei approach ta dekhaiche oita'r moddhe time complexity onek beshi. onek beshi bolte v^2. jeitar moddhe just
-    2 ta data structure ekta use kora hoiche. first distance and second is explored/visited.
+    2 ta data structure, ekta use kora hoiche. first distance and second is explored/visited.
 
     ----------------- solving approch ----------------------
     1. first jeehtu amader shob gula node re niyai kaj korte hobe she jonno ekta loop cholbe v times.

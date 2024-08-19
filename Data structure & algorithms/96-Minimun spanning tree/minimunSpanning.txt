@@ -1,0 +1,97 @@
+Accha minimum spanning tree ta ashole ki?
+ans: minimum spanning tree hocche emon ekta tree (jodio amra graph er chinta korbo) jeikhane each node will be connected
+of a graph. orthat ekta graph er protita node protita node er sathe connected thakbe. but connceted je thakbe sheta hobe
+shob cheye low cost e. 
+
+jemon ami jodi
+        6
+    2 ---- 3
+    |      |
+  3 |      | 1
+    |      | 
+    1 ---- 4
+        2
+dhoro eikhane amar ekta grpah deoya ache. ebong eitate each node are connceted. toh ekhon eitare jodi ami minimum spanning
+tree te convert korte chai taile amake. first e kheyal rakhte hobe je amar jate prottek ta node conncted thake. ar sheta 
+hobe minimum wieght e. jehetu amar ei grpah ta te 4 ta node ar 4 ta edges ache. ar ho arekta kotha amader spanning tree 
+te jate kono cycle na thake. mane spanning tree hoite hoile amar oi graph e kono loop / cycle thakte parbe na. 
+
+toh ami jodi cycle chara ei graph tare draw korte jai taile ami onek vabei draw korte parbo. jekhane shob gula node shob 
+gula node er sathe connceted thakbe. jemon: 
+---------- 1st ---------
+        6
+    2 ---- 3
+           |
+           | 1
+           | 
+    1 ---- 4
+        2
+eitate cost hobe = 6 + 1 + 2 = 8;
+
+---------- 2nd --------
+
+    2      3
+    |      |
+  3 |      | 1
+    |      | 
+    1 ---- 4
+        2
+eitate cost hobe = 3 + 2 + 1 = 6;
+
+---------- 3rd ---------
+        6
+    2 ---- 3
+    |      
+  3 |      
+    |      
+    1 ---- 4
+        2
+eitate cost hobe = 6 + 3 + 2 = 11;
+
+--------- 4th ------------
+        6
+    2 ---- 3
+    |      |
+  3 |      | 1
+    |      | 
+    1      4
+
+eitate cost hobe = 3 + 6 + 1 = 10;
+
+orthat uporer jei 4 ta graph ami draw korchi sheigula hocche possible graphs. toh eikhane shob gula graph ei kintu shob gula
+vertices connceted ache. but eikhane just ekta difference ache ar sheta hocche weight e. jemon 1st tar weight 8 tarpoer tar 
+6 tar porer tar 11 tar porer tar hocche 10;
+
+so ami jodi hisab kori shob cheye low cost e / low wight e shob gula noce connected rakhte partechi 2nd graph e. so, amar 
+ans hobe 2nd graph. 
+
+---------- 2nd -----
+
+    2      3
+    |      |
+  3 |      | 1
+    |      | 
+    1 ---- 4
+        2
+eitate cost hobe = 3 + 2 + 1 = 6;
+
+
+***********************************************************************************************************************
+
+ahsa kori je spanning tree ki sheta bujhaite parchi. ei spanning tree make korar jei algorithm tar name e hocche prim's
+algorithm. Jodio eita onektai amader previous kora dijkstra's algorithm er moto lagte pare. but oita chilo kono source 
+node theke onnano node e joaur minimum distance ber korar. 
+
+ar eitar name hocche minimum spanning tree / prim's algorithm. 
+
+------------------------------------------------------------------------------------------------------------------------
+
+ekhon problem statement bujhle cholo amra solution e jai. eitar approach ta ki hoite pare. eitar approach tao ahamori hard
+kichu na. easy e just amader koyekta step serially follow korte hobe. tobe eikhane amader koyekta extra data structure use
+korte hobe. 
+    1. visited --> jate kore amra cycle create kore na feli. 
+    2. parent --> eita muloto dorkar pore graph draw korar jonno. 
+    3. a Min_heap (priority queue) --> shob cheye low cost er weight jate select korte pari. 
+
+jak eikhane toh just ekta overview dilam je kivabe solve kora jay. er porer file e amra eitar code + explanation on each
+line dekhbo. cpp file e. 
