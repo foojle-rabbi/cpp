@@ -89,7 +89,7 @@ ar eitar name hocche minimum spanning tree / prim's algorithm.
 ekhon problem statement bujhle cholo amra solution e jai. eitar approach ta ki hoite pare. eitar approach tao ahamori hard
 kichu na. easy e just amader koyekta step serially follow korte hobe. tobe eikhane amader koyekta extra data structure use
 korte hobe. 
-    1. visited --> jate kore amra cycle create kore na feli. 
+    1. isMst --> jate kore amra cycle create kore na feli. 
     2. parent --> eita muloto dorkar pore graph draw korar jonno. 
     3. a Min_heap (priority queue) --> shob cheye low cost er weight jate select korte pari. 
 
