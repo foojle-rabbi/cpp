@@ -1,17 +1,3 @@
 {
-    "files.associations": {
-        "algorithm": "cpp",
-        "array": "cpp",
-        "initializer_list": "cpp",
-        "utility": "cpp",
-        "ostream": "cpp",
-        "iostream": "cpp",
-        "vector": "cpp"
-    },
-    "editor.fontFamily": "monaco, Consolas, 'Courier New', monospace",
-    "files.autoSave": "afterDelay",
-    "editor.cursorBlinking": "expand",
-    "terminal.integrated.fontSize": 13,
-    "editor.fontSize": 14,
-    "cmake.configureOnOpen": false
+    "editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace"
 }
