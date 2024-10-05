@@ -43,3 +43,8 @@ int main()
     */
     return 0;
 }
+
+/*
+Every time ami pichoner code gulate ashi ar boli, vai ki likhlam eigula. kintu tarporeo keno jani comment add 
+kora hoy na. but amar mone hoy comment kora ta tao banglay khubi necessary.
+*/

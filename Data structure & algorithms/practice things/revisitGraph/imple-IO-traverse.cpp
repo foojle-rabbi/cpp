@@ -63,6 +63,20 @@ class graph{
             }
         }
     }
+
+    void dfs(int src, vector<bool> &vis){
+        vis[src] = true;
+        cout << src << " ";
+
+        //ekhon baki gular jonno dekho
+        for(auto i : adj[src]){
+            if(vis[i] != true){
+                dfs(i, vis);
+            }
+        }
+    }
+
+    
 };
 
 int main()
@@ -72,6 +86,10 @@ int main()
     g.takeInput();
     g.display();
     g.bfs(1);
+
+    cout << endl << "Output of dfs visited: ";
+    vector<bool> vis(10, false);
+    g.dfs(0, vis);
     return 0;
 }
 

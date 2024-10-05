@@ -70,3 +70,7 @@ int main()
 /*
 Input string: 0 1 1 2 1 3 2 3 2 4 4 5
 */
+
+/*
+Today 5th sept: revisiting all the graph's previous code. but coudnt even understanding why was i wrote these.
+*/
