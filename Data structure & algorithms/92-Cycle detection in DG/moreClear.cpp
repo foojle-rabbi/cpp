@@ -69,7 +69,7 @@ int main()
 
         2. detect cycle in directed graph
             a. bfs approach (kahns algorithms er concept)
-            b. dfs approach (dfs visited concept)
+            b. dfs approach (dfsVisited (extra vector for tracking call stack) concept)
     
     abar eikhane arekta topic ache sheta holo topological sort er. eitar o abar 2 ta approach ache. 
         1. using dfs(stack concept)
@@ -77,3 +77,25 @@ int main()
     */
     return 0;
 }
+
+/*
+Accha taile ajke abar onekdin por same question solve korte aisha onek jay atkaiya gechi abar shei atkanor jayga gula clear
+o korte parchi. sathe notun jinish shike confusion o dur korte partechi. toh first upore ja lekha ache ta shob gula e 
+sottie. but hotath aisha dekhle bujahr upay nai. tobe eikhane dfs approach for solving UDG(cycle) eita kori nai maybe. but
+hae eikhane parents concept use kora hoy. 
+
+
+ar eitar jei main question means. cycle detect in directed grpah using bfs(khan's algorithms) eitar moddhe main cocepts hocche
+gia amar count er. tmi jodi dry run korte jao tahole kheyal korba je. amra firs e indegree ber kori then check kori je, kon
+kon node er indegree 0; jodi 0 hoy then queue te push kori. it can be more than one node at the first time. 
+
+then jotokkhon porjonto queue khali na hoy totokkhon porjon loop chole. ar in the loop amra quete theke 0 indegree oyala node 
+ber kore tar neighbour gula'r indegree -- minus kore dei. ar sathe jeitar indegree 0 hoy tare push kori. 
+
+toh eikhane jodi cycle na thake tahole shob gula node(veritices) e visit kora hoy. karon indegree ekta shomoy gia shobar 0 
+hoiya jay. dry run korle aro clear hobe. kintu jodi cycle thake tahole amar shob gula vertices er indegree 0 hobe na. 
+joto ta node cycly connected thakbe totoatar indegree 0 hobe na. ba toto gulare queue push korte parbe na. er agei amar 
+queue empty hoiya jaibo. ar eitao mone rakhba je shob shomoy count < V; where v is the nubmer of veritces.
+
+tai last e check korba je count == v kina? jodi == hoy tahole cycle nai. jodi not equal hoy taile cycle ache. thats easy. 
+*/
