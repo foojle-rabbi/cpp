@@ -1,0 +1,30 @@
+Ahha ha re er ager bar onek bar bolchi je shudhu shudhu code leikha kono lav nai. jodi na code er sathe explanation na 
+rakhi. kenono na as a human ekdin amra most of the jinish vuila jabo. ar coding jehetu ekta complex jinish tai eita vula 
+toh aro easy. 
+
+Toh ekhon ashi amader problem statement. Ei problem ta hocche find the shortest path in a directed weighted acyclic graph. 
+orthat tomare ekta directed acyclic(means there will be no cycle) with weight deoya thakbe sathe ekta src node. tomare 
+oikhan theke tomare oi src node theke onnano others jei node gula ache tader minimum distance means jei short path 
+ache oita return korte hobe.
+
+ei ta kintu amader previous file er problem theke alada. because amader previous problem ta chilo shortest path src to all
+node but oita chilo undirected + unweighted. tai oitate amra one node to onther er wieght dhoira nichilam 1. tai normal bfs
+algorithms use koray amader problem solve hoiya gechilo.
+
+kintu eita te amader wight deoya + directed hoyay amra oi vabe solve korte parbo. ar keno parbo na oita nije explain kore 
+dicchi. 
+
+BFS: Accha eitate jodi amra amader chiro porichito bfs algorithm apply korte jai tahole kaj korbe na. Cause Bfs algorithm 
+kaj kore level wise. toh shejonno amar wight beshi na kom sheita dekhbe na. she shudhu level wise samne agabe ar wight gula
+re + korte thakbe jeita ekta wrong ans return korbe.
+
+DFS: Accha amra jodi eitate dfs apply korte jai tahole kore dekhte pari. like first e jodi normal dfs use kori taile amader 
+right ans ashbe na. karon dfs ekta path ekbari visit kore. then eikhane jodi ektu changes aina current path er system kori.
+je current path er moddhe wight gula + kore jodi ager distance theke kom hoy tahole update kore dibo. hae taile hoy. kintu
+kintu eitate ekta downside ache jeita holo: amder tahole ekta node re multiple time visit korte hobe jeita time complexity
+ke onek bariye dibe. she jonno amader ei method o fail. 
+
+Okay Okay ajke abar onekdin por coding e boshchi she jonno ager moto concentrate korte pari na. Ar tachra family pressure Toh
+achei. Tar sathe nijer porashuna polapain er porashuna shob milaiya shanti nai. jak jai hook prodin beshi na pari 20 - 30 min
+time dite parleo cholbe I think. Jokhon eshob pera theke mukto hobo tokhon gia iccha moto coding korbo ager moto. 
+
